@@ -227,7 +227,7 @@
   <section id="profile" class="page p-0">
     <div class="split-profile">
       <!-- Wanita -->
-      <div class="half profile-left" style="--img:url('img/naja\ o.jpeg');--y:20%;--zoom:1.30">
+      <div class="half profile-left" >
         <div class="info">
           <div class="card">
             <div class="text-xs tracking-widest uppercase text-gray-300">Mempelai Priaa</div>
@@ -243,7 +243,7 @@
         </div>
       </div>
       <!-- Pria -->
-      <div class="half profile-right" style="--img:url('img/naja\ o.jpeg');--x:-400%;--y:50%;--zoom:1.60">
+      <div class="half profile-right" >
         <div class="info">
           <div class="card">
             <div class="text-xs tracking-widest uppercase text-gray-300">Mempelai wanita</div>
@@ -285,6 +285,21 @@
     scale(var(--zoom, 1.08));    /* zoom kecil biar tidak ada celah saat digeser */
   transform-origin:center;
 }
+.event-card.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 320px;
+}
+
+.event-card.center::before,
+.event-card.center::after {
+  display: none;
+}
+.event-actions .btn {
+  position: relative;
+  z-index: 10;
+}
 
       .event-grid{display:grid;row-gap:36px;column-gap:24px}
       @media(min-width:640px){ .event-grid{grid-template-columns:1fr 1fr; column-gap:36px; row-gap:32px} }
@@ -308,8 +323,8 @@
           <div class="great-vibes main will-reveal">Wedding Event</div>
           <div class="great-vibes script will-reveal"></div>
    <div class="event-banner event-banner--shift"
-     style="--shift-x:-2; --shift-y:-2; --zoom:1.1">
-  <img src="img/tangan (2).jpg" alt="Banner acara (landscape)" />
+     style="--shift-x:-2; --shift-y:-1; --zoom:1">
+  <img src="img/21321.jpeg" alt="Banner acara (landscape)" />
 </div>
 
         <div class="event-grid">
@@ -343,6 +358,22 @@
               </a>
             </div>
           </div>
+          <div class="event-card center mt-10">
+  <h3 class="playfair font-bold mb-1">Ngunduh Mantu</h3>
+  <p class="mb-1"><strong>Minggu, 05 April 2026</strong></p>
+  <p class="mb-1">Pukul <strong>10.00 WIB</strong> – Selesai</p>
+  <p class="text-gray-300">Kerjo RT 007/RW 003 ,Glinggang ,Pracimantoro ,Wonogiri</p>
+
+  <div class="event-actions flex justify-center">
+    <a href="https://maps.app.goo.gl/9xwtLKXMAAbCpLTR8" target="_blank" class="btn">
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M19.98 9.5a7.99 7.99 0 0 0-15.98 0c0 4.2 4 8.7 8 11.5a1 1 0 0 0 1.98 0c4-2.8 8-7.3 8-11.5Z" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      Open Location
+    </a>
+  </div>
+</div>
         </div>
       </div>
     </div>
